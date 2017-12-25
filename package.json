@@ -1,6 +1,7 @@
 {
   "name": "counteredux",
   "version": "0.1.0",
+  "homepage": "https://cham11ng.github.io/counteredux",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",

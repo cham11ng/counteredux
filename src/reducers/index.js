@@ -10,10 +10,16 @@ import {
 export default (state = [INITIAL_VALUE], action) => {
   switch (action.type) {
     case ADD_COUNTER:
-      return [...state, INITIAL_VALUE];
+      return [
+        ...state,
+        INITIAL_VALUE
+      ];
 
     case REMOVE_COUNTER:
-      return [...state.slice(0, -1)];
+      return [
+        ...state.slice(INITIAL_INDEX, action.index),
+        ...state.slice(action.index + 1)
+      ];
 
     case INCREMENT:
       return [

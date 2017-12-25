@@ -1,12 +1,29 @@
 .button {
-  padding: 5px 10px;
   margin: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #555555;
 }
 
-.increment {
-
+.button.control {
+  width: 38px;
+  border-radius: 50%;
+  background-color: #008CBA;
 }
 
-.decrement {
+.button.info {
+  width: 38px;
+  color: black;
+  background-color: #e7e7e7;
+}
 
+.button.danger {
+  width: 38px;
+  background-color: #f44336;
 }
