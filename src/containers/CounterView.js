@@ -18,9 +18,7 @@ let CounterView = ({state}) => {
   );
 };
 
-const mapStateToProps = state => {
-  return {state};
-};
+const mapStateToProps = state => ({state});
 
 CounterView = connect(mapStateToProps)(CounterView);
 

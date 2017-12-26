@@ -14,9 +14,7 @@ let Counter = ({index, value, increaseCounter, decreaseCounter, removeCounter}) 
   );
 };
 
-const mapStateToProps = state => {
-  return {state};
-};
+const mapStateToProps = state => ({state});
 
 const mapDispatchToProps = dispatch => ({
   increaseCounter(index) {
